@@ -1,0 +1,148 @@
+body {
+
+}
+
+#cart-icon {
+  height: 40px;
+  width: 40px;
+  margin-left: 45px;
+}
+
+#logo {
+height: 150px;
+width: 500px;
+display: block;
+margin-top: 30px;
+}
+
+.header-checkout {
+float: right;
+margin-right: 50px;
+font-size: 1.25rem;
+}
+
+.header-checkout p {
+  margin-top: 0px;
+}
+
+.header-checkout button {
+  background-color: #81b741;
+  border: none;
+  color: white;
+  padding: 10px 50px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin-left: 20px;
+  font-size: 1.1rem;
+}
+
+#cart-total {
+  float: right;
+  padding-left: 10px;
+  margin-top: 20px;
+  margin-bottom: 1rem;
+}
+
+header {
+  background: grey url(../images/header-image.jpg) no-repeat right top;
+  background-size: cover;
+  height: 27rem;
+  padding: 100px 0 0 16px;
+}
+
+header b {
+  color: white;
+}
+
+header a {
+  display: inline-block;
+}
+
+nav {
+  padding: 5px 0px 5px 200px;
+  background-color: #DCDCDC;
+  font-size: 1.2rem;
+  word-spacing: 12px;
+  font-weight: bold;
+}
+
+nav a {
+  text-decoration: none;
+  color: #093c60;
+}
+
+nav a:visited {
+  color: #093c60;
+}
+
+.sr-only {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+.tagline {
+  color: #81b741;
+  margin-top: 0px;
+  font-size: 1.9rem;
+  padding-left: 20px;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(4, 250px);
+  grid-template-rows: auto;
+  grid-gap: 50px;
+  padding: 100px;
+  padding-left: 400px;
+}
+
+.petcard {
+ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+ max-width: 400px;
+ margin: auto;
+}
+
+.petcard img {
+  width: 100%;
+}
+
+.petcard button {
+  background-color: #81b741;
+  border: none;
+  color: white;
+  padding: 10px 50px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.petcard button:hover {
+  background-color: #6b9638;
+}
+
+.petcard button:active {
+  transform: translateY(4px);
+}
+
+.petcard p, h3 {
+  padding-left: 10px;
+}
+
+.more-dogs {
+  background-color: #DCDCDC;
+  border: none;
+  color: #093c60;
+  padding: 10px 50px;
+  text-decoration: none;
+  display: inline-block;
+  font-weight: bold;
+  font-size: 1.8rem;
+  margin-left: 825px;
+}
