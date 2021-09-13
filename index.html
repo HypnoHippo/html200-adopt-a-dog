@@ -7,7 +7,7 @@
     <link rel="stylesheet" type="text/css" href="styles/stylesheet.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@500&family=Neuton:ital,wght@0,700;1,400&family=Work+Sans:wght@300&family=Inter:wght@400;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@700&family=Inter:wght@400;600;800&family=Neuton:ital,wght@0,700;1,400&family=Work+Sans:wght@300;400;700&display=swap" rel="stylesheet">
   </head>
 
   <body>
@@ -18,7 +18,7 @@
       <div class="header-checkout">
         <a href="checkout.html"><img id="cart-icon" src="images/cart-icon.svg" alt="Checkout"></a>
         <p id="cart-total"><b>$1234.56</b></p>
-        <p><a href="checkout.html"><button><b>Checkout</b></button></a></p>
+        <form action="checkout.html"><button><b>Checkout</b></button></form>
       </div>
       <a href="index.html"><img id="logo" src="images/adoptadog-logo.svg" alt="Adoptadog home"></a>
       <p class="tagline">Seattle's premiere dog adoption agency</p>
@@ -32,9 +32,9 @@
       <img id="dog-hug" src="images/home-intro.jpg" alt="A man in a red shirt hugs a smiling Golden Retriever">
       <div class="intro-text">
         <h2>Adopt A Dog</h2>
-        <p>Iduciendisite quo magnatem iuntum quid quaest ea am, tenderumet adis dolenem quidustrum fuga. Faceaquae estioria derum recuptatur, cum volore, undipsa doloreium hillupta aut
-es ut alitatuscit ommossum haritatur arum qui officae videbiti corporeium faccull oribus es quidignis ipietus explam sus
-am aut amet ant fugiatum, utem non reptat ad magnienecto volorent fugia nonsedi gendand itatquos as magnimpor aut
+        <p>Iduciendisite quo magnatem iuntum quid quaest ea am, tenderumet adis dolenem quidustrum fuga. Faceaquae estioria derum recuptatur, cum volore, undipsa doloreium hillupta aut<br>
+es ut alitatuscit ommossum haritatur arum qui officae videbiti corporeium faccull oribus es quidignis ipietus explam sus<br>
+am aut amet ant fugiatum, utem non reptat ad magnienecto volorent fugia nonsedi gendand itatquos as magnimpor aut<br>
 molor autatia ad est officimus accae et omnia cus, od qui ate</p>
       </div>
     </section>
@@ -44,7 +44,7 @@ molor autatia ad est officimus accae et omnia cus, od qui ate</p>
         <div class="petcard">
           <img src="images/murphy-card.jpg" alt="A sweet dog looks towards something off camera">
           <h3>Murphy</h3>
-          <p id="card-cost"><b>Cost to Adopt: </b>$123.45</p>
+          <p class="card-cost"><b>Cost to Adopt: </b>$123.45</p>
           <p class="pet-desc">Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum,
 qui doluptae</p>
           <p><button>Adopt</button></p>
@@ -52,7 +52,7 @@ qui doluptae</p>
         <div class="petcard">
           <img src="images/poppy-card.jpg" alt="A happy pup walking down a shady sunlit street">
           <h3>Poppy</h3>
-          <p><b>Cost to Adopt: </b>$123.45</p>
+          <p class="card-cost"><b>Cost to Adopt: </b>$123.45</p>
           <p class="pet-desc">Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum,
 qui doluptae</p>
           <p><button>Adopt</button></p>
@@ -60,7 +60,7 @@ qui doluptae</p>
         <div class="petcard">
           <img src="images/jack-card.jpg" alt="A cute beagle puppy sitting and looking up at something">
           <h3>Jack</h3>
-          <p><b>Cost to Adopt: </b>$123.45</p>
+          <p class="card-cost"><b>Cost to Adopt: </b>$123.45</p>
           <p class="pet-desc">Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum,
 qui doluptae</p>
           <p><button>Adopt</button></p>
@@ -68,7 +68,7 @@ qui doluptae</p>
         <div class="petcard">
           <img src="images/duffy-card.jpg" alt="A brown and white dog sitting in grass looking straight at you">
           <h3>Duffy</h3>
-          <p><b>Cost to Adopt: </b>$123.45</p>
+          <p class="card-cost"><b>Cost to Adopt: </b>$123.45</p>
           <p class="pet-desc">Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum,
 qui doluptae</p>
           <p><button>Adopt</button></p>
@@ -76,7 +76,7 @@ qui doluptae</p>
         <div class="petcard">
           <img src="images/lucas-card.jpg" alt="An excited black dog on a leash looking happily up and into the camera">
           <h3>Lucas</h3>
-          <p><b>Cost to Adopt: </b>$123.45</p>
+          <p class="card-cost"><b>Cost to Adopt: </b>$123.45</p>
           <p class="pet-desc">Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum,
 qui doluptae</p>
           <p><button>Adopt</button></p>
@@ -84,7 +84,7 @@ qui doluptae</p>
         <div class="petcard">
           <img src="images/jake-card.jpg" alt="A white tan dog sits patiently focused">
           <h3>Jake</h3>
-          <p><b>Cost to Adopt: </b>$123.45</p>
+          <p class="card-cost"><b>Cost to Adopt: </b>$123.45</p>
           <p class="pet-desc">Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum,
 qui doluptae</p>
           <p><button>Adopt</button></p>
@@ -92,7 +92,7 @@ qui doluptae</p>
         <div class="petcard">
           <img src="images/angus-card.jpg" alt="A big happy dog sitting in tall grass">
           <h3>Angus</h3>
-          <p><b>Cost to Adopt: </b>$123.45</p>
+          <p class="card-cost"><b>Cost to Adopt: </b>$123.45</p>
           <p class="pet-desc">Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum,
 qui doluptae</p>
           <p><button>Adopt</button></p>
@@ -100,7 +100,7 @@ qui doluptae</p>
         <div class="petcard">
           <img src="images/violet-card.jpg" alt="An adorable brown puppy sitting on white tile">
           <h3>Violet</h3>
-          <p><b>Cost to Adopt: </b>$123.45</p>
+          <p class="card-cost"><b>Cost to Adopt: </b>$123.45</p>
           <p class="pet-desc">Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum,
 qui doluptae</p>
           <p><button>Adopt</button></p>

@@ -1,3 +1,7 @@
+html {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
 }
@@ -6,14 +10,15 @@ body p {
   font-family: 'Work Sans', sans-serif;
 }
 
-h2, h3 {
+h2, h3, label {
   color: #093c60;
   font-weight: bold;
   font-family: 'Neuton', serif;
 }
 
-h2 {
-  font-size: 2.2rem;
+.dogs-intro h2 {
+  font-size: 2.8rem;
+  margin-left: 18.75rem;
 }
 
 .intro {
@@ -25,6 +30,7 @@ h2 {
   width: 43.75rem;
   float: right;
   margin-right: 23.125rem;
+  margin-left: 0.5rem;
 }
 
 .intro-text h2 {
@@ -38,6 +44,8 @@ h2 {
   font-size: 1.625rem;
   line-height: 1.4;
   margin-top: 1rem;
+  width: 50.375rem;
+  font-weight: 300;
 }
 
 #dog-hug {
@@ -106,7 +114,7 @@ header a {
 }
 
 nav {
-  padding: 0.3125rem 0px 0.3125rem 18.75rem;
+  padding: 0.3125rem 0rem 0.3125rem 18.75rem;
   background-color: #ececec;
   font-size: 1.4rem;
   word-spacing: 0.75rem;
@@ -148,8 +156,12 @@ nav p, .more-dogs {
   grid-template-columns: repeat(4, 16.875rem);
   grid-template-rows: auto;
   grid-gap: 5rem;
-  padding: 6.25rem;
+  padding: 0 6.25rem 6.25rem 0;
   padding-left: 18.75rem;
+}
+
+#section2 .container {
+  padding-top: 6.25rem;
 }
 
 .petcard {
@@ -172,6 +184,7 @@ nav p, .more-dogs {
   display: inline-block;
   font-weight: bold;
   font-size: 1.2rem;
+  border-radius: 0.125rem;
 }
 
 .petcard button:hover {
@@ -182,7 +195,7 @@ nav p, .more-dogs {
   transform: translateY(0.25rem);
 }
 
-.petcard p, h3 {
+.petcard p, .petcard h3 {
   padding-left: 1rem;
   padding-right: 1rem;
   margin-bottom: 0;
@@ -203,7 +216,7 @@ nav p, .more-dogs {
   font-size: 0.9rem;
 }
 
-#card-cost {
+.card-cost {
   margin-top: 0.5625rem;
 }
 
@@ -226,6 +239,172 @@ nav p, .more-dogs {
 
 #section2 {
   padding-bottom: 7.8125rem;
+}
+
+article {
+  margin-left: 18.75rem;
+  padding-top: 1rem;
+  padding-bottom: 7.8125rem;
+}
+
+article img {
+  width: 23.375rem;
+  height: 22.125rem;
+}
+
+.blog-text {
+  float: right;
+  width: 54rem;
+  margin-right: 19.375rem;
+}
+
+.blog-text h3 {
+  font-size: 2.1rem;
+  margin-top: -10.25rem;
+  margin-bottom: 0;
+}
+
+.blog-text p {
+  opacity: 80%;
+  font-size: 1.2rem;
+  line-height: 1.7;
+  font-weight: 400;
+  margin-top: 0.5rem;
+}
+
+.checkout-page {
+  margin-left: 18.75rem;
+}
+
+.checkout-page h2 {
+  font-size: 2.8rem;
+}
+
+#city {
+  width: 23.375rem;
+}
+
+#state {
+  width: 11.125rem;
+}
+
+#location {
+  width: 23.375rem;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  border: 0.125rem solid #e0e0e0;
+  font-size: 2rem;
+  padding: 1rem;
+  margin-top: 1rem;
+  background-image: url(../images/location-bar.jpg);
+}
+
+#state-label {
+  margin-left: 22.1rem;
+  margin-right: 9.0625rem;
+}
+
+#zip {
+  width: 14.8125rem;
+}
+
+.form-group select {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  border: 0.125rem solid #e0e0e0;
+  font-size: 2rem;
+  margin: 0 2rem 0 2rem;
+  padding: 1rem;
+  background-image: url(../images/state-bar.jpg);
+}
+
+input {
+  width: 53.625rem;
+  height: 4.1875rem;
+  font-size: 2rem;
+  margin-top: 10.125rem;
+  margin-bottom: 3.75rem;
+  border: 0.125rem solid #e0e0e0;
+}
+
+.radio {
+  height: 1.5rem;
+  width: 1.5rem;
+  margin-top: 1rem;
+}
+
+#no {
+  margin-left: 4.5rem;
+}
+
+.radio-label {
+  font-size: 1rem;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: normal;
+  color: black;
+  font-size: 1.6rem;
+  opacity: 80%;
+  margin-left: 0.5rem;
+  margin-top: 1rem;
+}
+
+form h3, form h2, label {
+  font-size: 2.2rem;
+}
+
+.small-petcard {
+  float: left;
+}
+
+.small-petcard img {
+  height: 5.75rem;
+}
+
+.small-petcard h3 {
+  font-size: 1.75rem;
+  margin-right: 9.875rem;
+  margin-top: 0;
+}
+
+.small-petcard p {
+  margin-top: -3.125rem;
+  margin-right: 3.125rem;
+  margin-left: 1.5625rem;
+  opacity: 80%;
+}
+
+.small-petcard h3, .small-petcard p {
+  float: right;
+  clear: both;
+}
+
+#checkout-container {
+  clear: both;
+}
+
+#checkout-container h3 {
+  margin-bottom: 0;
+}
+
+#checkout-container p {
+  font-size: 1.7rem;
+  font-weight: normal;
+  opacity: 80%;
+  margin-top: 1rem;
+}
+
+#submit {
+  background-color: #81b741;
+  border: none;
+  color: white;
+  width: 21.0625rem;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 700;
+  font-size: 1.6rem;
+  border-radius: 0.25rem;
+  margin-bottom: 7.375rem;
 }
 
 footer {
@@ -259,6 +438,7 @@ footer a:visited {
   word-spacing: 0.75rem;
   padding-bottom: 0.9375rem;
   font-family: 'Inter', sans-serif;
+  font-weight: 600;
 }
 
 #footer-logo {
