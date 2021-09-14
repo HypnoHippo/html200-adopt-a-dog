@@ -260,7 +260,7 @@ article img {
 
 .blog-text h3 {
   font-size: 2.1rem;
-  margin-top: -10.25rem;
+  margin-top: -1rem;
   margin-bottom: 0;
 }
 
@@ -324,7 +324,7 @@ input {
   width: 53.625rem;
   height: 4.1875rem;
   font-size: 2rem;
-  margin-top: 10.125rem;
+  margin-top: 1rem;
   margin-bottom: 3.75rem;
   border: 0.125rem solid #e0e0e0;
 }
