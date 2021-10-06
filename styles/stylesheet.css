@@ -2,6 +2,10 @@ html {
   box-sizing: border-box;
 }
 
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
 body {
   margin: 0;
 }
@@ -10,13 +14,23 @@ body p {
   font-family: 'Work Sans', sans-serif;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 h2, h3, label {
   color: #093c60;
   font-weight: bold;
   font-family: 'Neuton', serif;
 }
 
-.dogs-intro h2 {
+.flex-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.dogs-intro h2, .flex-container h2 {
   font-size: 2.8rem;
   margin-left: 18.75rem;
 }
@@ -24,12 +38,12 @@ h2, h3, label {
 .intro {
   padding-left: 18.75rem;
   padding-top: 3.125rem;
+  display: grid;
+  grid-template-columns: 26% 50%;
+  grid-column-gap: 4rem;
 }
 
 .intro-text {
-  width: 43.75rem;
-  float: right;
-  margin-right: 23.125rem;
   margin-left: 0.5rem;
 }
 
@@ -46,11 +60,12 @@ h2, h3, label {
   margin-top: 1rem;
   width: 50.375rem;
   font-weight: 300;
+  max-width: 100%;
 }
 
 #dog-hug {
   width: 29.1875rem;
-  height: 26.4375rem;
+  height: auto;
 }
 
 #cart-icon {
@@ -156,12 +171,7 @@ nav p, .more-dogs {
   grid-template-columns: repeat(4, 16.875rem);
   grid-template-rows: auto;
   grid-gap: 5rem;
-  padding: 0 6.25rem 6.25rem 0;
-  padding-left: 18.75rem;
-}
-
-#section2 .container {
-  padding-top: 6.25rem;
+  padding: 6.25rem 6.25rem 6.25rem 18.75rem;
 }
 
 .petcard {
@@ -245,17 +255,18 @@ article {
   margin-left: 18.75rem;
   padding-top: 1rem;
   padding-bottom: 7.8125rem;
+  display: grid;
+  grid-template-columns: 24% 54%;
+  grid-column-gap: 2rem;
 }
 
 article img {
   width: 23.375rem;
-  height: 22.125rem;
 }
 
 .blog-text {
-  float: right;
   width: 54rem;
-  margin-right: 19.375rem;
+  max-width: 100%;
 }
 
 .blog-text h3 {
