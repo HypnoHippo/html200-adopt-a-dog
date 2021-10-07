@@ -207,20 +207,6 @@ aside a:visited {
   padding: 2.25rem 6.25rem 6.25rem 18.75rem;
 }
 
-@media screen and (max-width: 500px) {
-  .container {
-    grid-template-columns: repeat(1, 16.875rem);
-    padding: 0;
-  }
-}
-
-@media screen and (max-width: 800px) {
-  .container {
-    grid-template-columns: repeat(2, 16.875rem);
-    padding: 0;
-  }
-}
-
 .petcard {
  box-shadow: 0 0.25rem .5rem 0 rgba(0, 0, 0, 0.2);
  margin: auto;
@@ -509,4 +495,63 @@ footer a:visited {
   transform: scaleY(1.1);
   font-family: 'Inter', sans-serif;
   font-weight: normal;
+}
+
+@media screen and (max-width: 486px) {
+  .container {
+    grid-template-columns: 16rem;
+    padding: 0;
+    margin-left: 15%;
+  }
+
+  aside {
+    display: none;
+  }
+
+  .more-dogs {
+    margin-left: 14%;
+    margin-top: 55px;
+  }
+
+  .intro {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  header {
+    padding-left: 3rem;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .tagline {
+    margin-left: -1rem;
+  }
+
+  #logo {
+    margin-left: -1.25rem;
+  }
+
+  .header-checkout {
+    margin-left: 100px;
+    display: inline-block;
+    float: none;
+    margin-right: 0;
+  }
+
+  #nav-line {
+    margin-left: -245px;
+  }
+
+  footer {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+@media screen and (min-width: 487px) and (max-width: 768px) {
+  .container {
+    grid-template-columns: repeat(2, 16.875rem);
+    padding: 0;
+  }
 }
