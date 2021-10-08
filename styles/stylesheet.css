@@ -207,6 +207,14 @@ aside a:visited {
   padding: 2.25rem 6.25rem 6.25rem 18.75rem;
 }
 
+.container-more {
+  display: grid;
+  grid-template-columns: repeat(4, 16.875rem);
+  grid-template-rows: auto;
+  grid-gap: 5rem;
+  padding: 1.25rem 6.25rem 6.25rem 18.75rem;
+}
+
 .petcard {
  box-shadow: 0 0.25rem .5rem 0 rgba(0, 0, 0, 0.2);
  margin: auto;
