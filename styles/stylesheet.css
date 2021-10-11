@@ -368,7 +368,7 @@ article img {
 
 .form-group {
   display: grid;
-  grid-template-columns: 0.25fr 0.15fr 0.25fr;
+  grid-template-columns: 25.75rem 15rem 15rem;
   grid-template-rows: auto auto;
 }
 
@@ -383,14 +383,6 @@ article img {
   padding: 1rem;
   background-image: url(../images/state-bar.jpg);
   background-repeat: no-repeat;
-}
-
-.form-group label {
-  margin-left: 1rem;
-}
-
-.form-group input {
-  margin-left: 1rem;
 }
 
 input {
@@ -783,10 +775,58 @@ footer a:visited {
   .flex-container h2 {
     margin-left: 17.5%;
   }
+
+  #city {
+    width: 20.5rem;
+    grid-row-start: 2;
+  }
+
+  #state {
+    grid-row-start: 4;
+  }
+
+  input {
+    width: 20.5rem;
+  }
+
+  .form-group {
+    grid-template-columns: 20.5rem;
+  }
+
+  .form-group select {
+    margin-left: 0;
+  }
+
+  #state-label {
+    margin-left: 0;
+  }
+
+  #location {
+    width: 20.5rem;
+  }
+
+  #zip-label {
+    margin-top: 4.125rem;
+  }
 }
 
 @media screen and (max-width: 470px) {
   #nav-line {
     margin-left: -14.8125rem;
+  }
+}
+
+@media screen and (min-width: 654px) and (max-width: 950px) {
+  .form-group {
+    grid-template-columns: 25.75rem 15rem;
+    grid-template-rows: auto auto auto auto;
+  }
+
+  #zip {
+    grid-row-start: 4;
+  }
+
+  #zip-label {
+    grid-row-start: 3;
   }
 }
