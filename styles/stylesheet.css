@@ -580,7 +580,7 @@ footer a:visited {
     width: 31%;
   }
 
-  .petcard-button {
+  .petcard button {
     padding-right: 4.1rem;
     padding-left: 4.1rem;
   }
@@ -643,7 +643,7 @@ footer a:visited {
     margin: 0;
   }
 
-  .petcard-button {
+  .petcard button {
     padding-right: 4.1rem;
     padding-left: 4.1rem;
   }
@@ -693,6 +693,11 @@ footer a:visited {
     grid-template-columns: 90%;
     grid-gap: 2rem;
     padding-right: 2rem;
+  }
+
+  .petcard-button-more {
+    padding-left: 5.625rem !important;
+    padding-right: 5.625rem !important;
   }
 }
 
