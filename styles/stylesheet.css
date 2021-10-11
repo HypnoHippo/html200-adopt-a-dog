@@ -343,6 +343,7 @@ article img {
 
 #state {
   width: 11.125rem;
+  height: max-content;
 }
 
 #location {
@@ -358,12 +359,17 @@ article img {
 }
 
 #state-label {
-  margin-left: 22.1rem;
-  margin-right: 9.0625rem;
+  margin-left: 1rem;
 }
 
 #zip {
   width: 14.8125rem;
+}
+
+.form-group {
+  display: grid;
+  grid-template-columns: 0.25fr 0.15fr 0.25fr;
+  grid-template-rows: auto auto;
 }
 
 .form-group select {
@@ -371,10 +377,20 @@ article img {
   -webkit-appearance: none;
   appearance: none;
   border: 0.125rem solid #e0e0e0;
-  font-size: 2rem;
-  margin: 0 2rem 0 2rem;
+  font-size: 1.5rem;
+  margin-left: 1rem;
+  margin-top: 1rem;
   padding: 1rem;
   background-image: url(../images/state-bar.jpg);
+  background-repeat: no-repeat;
+}
+
+.form-group label {
+  margin-left: 1rem;
+}
+
+.form-group input {
+  margin-left: 1rem;
 }
 
 input {
@@ -699,6 +715,10 @@ footer a:visited {
     padding-left: 5.625rem !important;
     padding-right: 5.625rem !important;
   }
+
+  .checkout-page {
+    margin-left: 18.8%;
+  }
 }
 
 @media screen and (max-width: 1390px) {
@@ -718,6 +738,10 @@ footer a:visited {
 
   .flex-container h2 {
     margin-left: 17.5%;
+  }
+
+  .checkout-page {
+    margin-left: 3.8%;
   }
 }
 
