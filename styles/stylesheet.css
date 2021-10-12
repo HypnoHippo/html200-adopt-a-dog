@@ -209,7 +209,7 @@ aside a:visited {
   grid-template-columns: repeat(3, 16.875rem);
   grid-template-rows: auto;
   grid-gap: 1.45rem;
-  padding: 2.25rem 6.25rem 6.25rem 18.75rem;
+  padding: 2.25rem 6.25rem 0 18.75rem;
 }
 
 .container-more {
@@ -291,6 +291,7 @@ aside a:visited {
   font-weight: bold;
   font-size: 1.6rem;
   margin-left: 37rem;
+  margin-top: 3.4375rem;
 }
 
 #section2 {
@@ -531,7 +532,6 @@ footer a:visited {
 
   .more-dogs {
     margin-left: 14%;
-    margin-top: 3.4375rem;
   }
 
   .intro {
@@ -615,8 +615,8 @@ footer a:visited {
   }
 
   .more-dogs {
-    margin-left: 7rem;
-    margin-top: 3rem;
+    margin-left: 17%;
+
   }
 
   #nav-line {
@@ -636,6 +636,11 @@ footer a:visited {
     padding: 0;
     padding-left: 1rem;
   }
+
+  .more-dogs {
+    margin-left: 14%;
+
+  }
 }
 
 @media screen and (min-width: 1231px) and (max-width: 1460px) {
@@ -643,6 +648,11 @@ footer a:visited {
     grid-template-columns: repeat(3, 13.875rem);
     padding: 0;
     padding-left: 1rem;
+  }
+
+  .more-dogs {
+    margin-left: 19%;
+
   }
 }
 
@@ -654,6 +664,12 @@ footer a:visited {
   .petcard button {
     padding-right: 4.1rem;
     padding-left: 4.1rem;
+  }
+}
+
+@media screen and (min-width: 1460px) and (max-width: 1834px) {
+  .more-dogs {
+    margin-left: 21%;
   }
 }
 
