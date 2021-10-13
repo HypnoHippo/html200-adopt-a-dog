@@ -543,8 +543,7 @@ footer a:visited {
 
   header {
     padding-left: 3rem;
-    background-position: center;
-    background-size: cover;
+    background-position: top;
   }
 
   .tagline {
@@ -605,7 +604,7 @@ footer a:visited {
 
   header {
     padding: 3.688rem 0 0 1.5rem;
-    background-size: cover;
+    background-position: top, center;
   }
 
   .header-checkout {
@@ -859,5 +858,19 @@ footer a:visited {
 @media screen and (max-width: 559px) {
   header a {
     display: block;
+  }
+
+  #cart-link {
+    display: inline-block;
+  }
+}
+
+@media screen and (max-width: 359px) {
+  .header-checkout {
+    margin-left: 14%;
+  }
+
+  #cart-icon {
+    margin-left: 4.75rem;
   }
 }
