@@ -543,7 +543,8 @@ footer a:visited {
 
   header {
     padding-left: 3rem;
-    background-position: top;
+    background-position: center;
+    background-size: cover;
   }
 
   .tagline {
