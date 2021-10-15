@@ -8,7 +8,7 @@
     <link rel="stylesheet" type="text/css" href="styles/stylesheet.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@700&family=Inter:wght@400;600;800&family=Neuton:ital,wght@0,700;1,400&family=Work+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@700&family=Inter:wght@400;600;800&family=Neuton:ital,wght@0,700;1,400&family=Work+Sans:wght@300;400;500;700&display=swap" rel="stylesheet">
   </head>
 
   <body>
@@ -17,28 +17,62 @@
 
     <header>
       <div class="header-checkout">
-        <a href="checkout.html"><img id="cart-icon" src="images/cart-icon.svg" alt="Checkout"></a>
+        <a id="cart-link" href="checkout.html"><img id="cart-icon" src="images/cart-icon.svg" alt="Checkout"></a>
         <p id="cart-total"><b>$1234.56</b></p>
         <form action="checkout.html"><button><b>Checkout</b></button></form>
       </div>
-      <a href="index.html"><img id="logo" src="images/adoptadog-logo.svg" alt="Adoptadog home"></a>
-      <p class="tagline">Seattle's premiere dog adoption agency</p>
+      <div class="logo-group">
+        <a href="index.html"><img id="logo" src="images/adoptadog-logo.svg" alt="Adoptadog home"></a>
+        <p class="tagline">Seattle's premiere dog adoption agency</p>
+      </div>
     </header>
 
     <nav>
-      <p><a href="index.html">Home</a>  /  <a href="dogs.html">Dogs</a>  /  <a href="blog.html">Blog</a></p>
+      <p id="nav-line"><a href="index.html">Home</a>  /  <a href="dogs.html">Dogs</a>  /  <a href="blog.html">Blog</a></p>
     </nav>
 
     <section id="main" class="intro">
-      <img id="dog-hug" src="images/home-intro.jpg" alt="A man in a red shirt hugs a smiling Golden Retriever" width="410" height="370">
+      <img src="images/new-home-intro.png" alt="A man in a red shirt hugs a smiling Golden Retriever" width="860" height="425">
       <div class="intro-text">
         <h2>Adopt A Dog</h2>
-        <p>Iduciendisite quo magnatem iuntum quid quaest ea am, tenderumet adis dolenem quidustrum fuga. Faceaquae estioria derum recuptatur, cum volore, undipsa doloreium hillupta aut<br>
-es ut alitatuscit ommossum haritatur arum qui officae videbiti corporeium faccull oribus es quidignis ipietus explam sus<br>
-am aut amet ant fugiatum, utem non reptat ad magnienecto volorent fugia nonsedi gendand itatquos as magnimpor aut<br>
-molor autatia ad est officimus accae et omnia cus, od qui ate</p>
+        <p>Iduciendisite quo magnatem iuntum quid quaest ea am, tenderumet adis<br>
+        dolenem quidustrum fuga. Faceaquae estioria derum recuptatur, cum volore,<br>
+        undipsa doloreium hillupta aut es ut alitatuscit ommossum haritatur arum qui<br>
+        officae videbiti corporeium faccull oribus es quidignis ipietus explam sus am</p>
       </div>
     </section>
+
+    <aside>
+      <h2>From Our Blog</h2>
+      <div class="grid">
+        <article class="preview-article">
+          <img src="images/new-blog-1.png">
+          <h3>Traveling With Your Dog</h3>
+          <p>Iciustiam, et ad quiaes cum que<br>
+          excea sinciendi qui offic temquas<br>
+          doluptios dolupta tiandebis nem ut.</p>
+          <a href="blog.html">Read more >></a>
+        </article>
+
+        <article class="preview-article">
+          <img src="images/new-blog-2.png">
+          <h3>How To Walk Multiple Dogs</h3>
+          <p>Iciustiam, et ad quiaes cum que<br>
+          excea sinciendi qui offic temquas<br>
+          doluptios dolupta tiandebis nem ut.</p>
+          <a href="blog.html">Read more >></a>
+        </article>
+
+        <article class="preview-article">
+          <img src="images/new-blog-3.png">
+          <h3>Teach Your Dog To Fetch!</h3>
+          <p>Iciustiam, et ad quiaes cum que<br>
+          excea sinciendi qui offic temquas<br>
+          doluptios dolupta tiandebis nem ut.</p>
+          <a href="blog.html">Read more >></a>
+        </article>
+      </div>
+    </aside>
 
     <section id="section2">
       <div class="container">
@@ -46,64 +80,42 @@ molor autatia ad est officimus accae et omnia cus, od qui ate</p>
           <img onclick="murphyClick()" src="images/murphy-card.jpg" alt="A sweet dog looks towards something off camera" width="476" height="284">
           <h3>Murphy</h3>
           <p class="card-cost"><b>Cost to Adopt: </b>$123.45</p>
-          <p class="pet-desc">Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum,
-qui doluptae</p>
+          <p class="pet-desc">Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
           <p><button onclick="dogButton()">Adopt</button></p>
         </div>
         <div class="petcard">
           <img onclick="poppyClick()" src="images/poppy-card.jpg" alt="A happy pup walking down a shady sunlit street" width="476" height="284">
           <h3>Poppy</h3>
           <p class="card-cost"><b>Cost to Adopt: </b>$123.45</p>
-          <p class="pet-desc">Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum,
-qui doluptae</p>
+          <p class="pet-desc">Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
           <p><button onclick="dogButton()">Adopt</button></p>
         </div>
         <div class="petcard">
           <img onclick="jackClick()" src="images/jack-card.jpg" alt="A cute beagle puppy sitting and looking up at something" width="476" height="284">
           <h3>Jack</h3>
           <p class="card-cost"><b>Cost to Adopt: </b>$123.45</p>
-          <p class="pet-desc">Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum,
-qui doluptae</p>
+          <p class="pet-desc">Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
           <p><button onclick="dogButton()">Adopt</button></p>
         </div>
         <div class="petcard">
           <img onclick="duffyClick()" src="images/duffy-card.jpg" alt="A brown and white dog sitting in grass looking straight at you" width="476" height="284">
           <h3>Duffy</h3>
           <p class="card-cost"><b>Cost to Adopt: </b>$123.45</p>
-          <p class="pet-desc">Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum,
-qui doluptae</p>
+          <p class="pet-desc">Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
           <p><button onclick="dogButton()">Adopt</button></p>
         </div>
         <div class="petcard">
           <img onclick="lucasClick()" src="images/lucas-card.jpg" alt="An excited black dog on a leash looking happily up and into the camera" width="476" height="284">
           <h3>Lucas</h3>
           <p class="card-cost"><b>Cost to Adopt: </b>$123.45</p>
-          <p class="pet-desc">Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum,
-qui doluptae</p>
+          <p class="pet-desc">Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
           <p><button onclick="dogButton()">Adopt</button></p>
         </div>
         <div class="petcard">
           <img onclick="jakeClick()" src="images/jake-card.jpg" alt="A white tan dog sits patiently focused" width="476" height="284">
           <h3>Jake</h3>
           <p class="card-cost"><b>Cost to Adopt: </b>$123.45</p>
-          <p class="pet-desc">Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum,
-qui doluptae</p>
-          <p><button onclick="dogButton()">Adopt</button></p>
-        </div>
-        <div class="petcard">
-          <img onclick="angusClick()" src="images/angus-card.jpg" alt="A big happy dog sitting in tall grass" width="476" height="284">
-          <h3>Angus</h3>
-          <p class="card-cost"><b>Cost to Adopt: </b>$123.45</p>
-          <p class="pet-desc">Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum,
-qui doluptae</p>
-          <p><button onclick="dogButton()">Adopt</button></p>
-        </div>
-        <div class="petcard">
-          <img onclick="violetClick()" src="images/violet-card.jpg" alt="An adorable brown puppy sitting on white tile" width="476" height="284">
-          <h3>Violet</h3>
-          <p class="card-cost"><b>Cost to Adopt: </b>$123.45</p>
-          <p class="pet-desc">Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum,
-qui doluptae</p>
+          <p class="pet-desc">Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae</p>
           <p><button onclick="dogButton()">Adopt</button></p>
         </div>
       </div>
@@ -119,7 +131,7 @@ qui doluptae</p>
 
     <script src="javascript/dogButton.js" charset="utf-8"></script>
     <script src="javascript/imageClick.js" charset="utf-8"></script>
-    
+
   </body>
 
 </html>
