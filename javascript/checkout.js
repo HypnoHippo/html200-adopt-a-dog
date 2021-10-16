@@ -1,17 +1,16 @@
-function successAlert() {
+$('#submit').click(function(){
   let results = [
-      document.getElementById('name').value,
-      document.getElementById('email').value,
-      document.getElementById('address').value,
-      document.getElementById('state').value,
-      document.getElementById('city').value,
-      document.getElementById('zip').value,
-      document.getElementById('yes').checked,
-      document.getElementById('no').checked,
-      document.getElementById('location').value
+      $('#name').val(),
+      $('#email').val(),
+      $('#address').val(),
+      $('#state').val(),
+      $('#city').val(),
+      $('#zip').val(),
+      $('input[type=radio][name=first-time]:checked').val(),
+      $('#location').val()
   ];
 
   console.log(results);
 
   alert("Thank you. The form information has been received");
-}
+});
