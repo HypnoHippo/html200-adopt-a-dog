@@ -1,0 +1,43 @@
+TESTING:
+
+User Personas:
+
+Name: Harvey Greenwald
+Age: 32
+Occupation: Used Car Salesman
+Activities: Online Poker, Watching TV, and Golf
+Description:
+Harvey has a full time job that makes decent money, lives alone, and is looking to adopt a dog. 
+He uses a computer at work and at home so we can assume he's pretty tech savvy. 
+Almost everyone uses a smartphone now and seeing how he's not very old I think it's safe to assume that he might browse the site from a phone also. 
+The site should definitely support the most used browsers for desktop and mobile. 
+I'd include Edge based off the possibility he might be using a work computer to browse the site during breaks or lunches.
+
+
+Name: Janet Wilkins
+Age: 75
+Occupation: Retired
+Activities: Gardening, Doing Puzzles, Reading
+Description:
+Janet is retired and recently widowed. She is looking to adopt a dog for companionship.
+She has an older desktop computer and mainly uses it to check emails and occasionally Facebook.
+She has a basic "smart"phone that she mainly uses for calling friends, playing some of the pre-installed games, and again, Facebook.
+Janet isn't the most computer literate user. She probably hasn't installed any third party browsers and uses Edge, possibly Chrome on the off chance she has.
+She doesn't use her phone for more than calls and sometimes Facebook so we probably don't need to worry about her using the site on mobile.
+I would make sure the site is compatible with Internet Explorer in case she isn't very good about updating her computer.
+I would also make sure that the site is easily usable and readable on an older stock mobile browser just in case she does use the site on a mobile device.
+
+
+Testing Steps:
+
+*Checked site with the W3C HTML5 validator and CSS validator, passed both.
+
+*Tested site on desktop running Windows 10 with latest versions of Firefox, Chrome, and Edge. Looks and works good on all 3.
+
+*Tested site on mobile using latest version Android OS with latest version Firefox, Chrome, DuckDuckGo, and stock Android browsers. Looks and works good on all of them.
+
+*Tested site with BrowserStack for Mac (Big Sur) with latest version Safari, Chrome, and Firefox. Everything looked good.
+
+*Tested site with BrowserStack for iOS (iPhone 12 Pro, iPhone 11, iPhone X) with latest version Safari and Chrome browsers. Looked good aside from the blog preview
+ not showing in landscape mode on iPhone 12 Pro and iPhone X so I tweaked the CSS to fix it.
+ 
